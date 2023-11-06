@@ -3,9 +3,8 @@
 /* Main style */
 
 .page {
-  margin: 0 auto;
-  padding: 10px;
   color: var(--text-clr);
+  font-family: var(--page-font-family, "IBM Plex mono", monospace);
   font-size: 18px;
   background-image: var(--cover-image);
   background-size: cover;
@@ -73,6 +72,8 @@
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
+  max-height: 100vh;
+  min-height: 668px;
 }
 
 .rec-icon {
@@ -98,7 +99,6 @@
 
 .decorated {
   position: relative;
-  block-size: 100vh;
   min-block-size: 97vh;
 }
 
@@ -411,7 +411,8 @@
 
 .footer {
   display: grid;
-  block-size: 100vh;
+  max-height: 100vh;
+  min-height: 668px;
 }
 
 .footer__text {
