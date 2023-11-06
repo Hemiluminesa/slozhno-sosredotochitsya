@@ -98,6 +98,7 @@
 
 .decorated {
   position: relative;
+  block-size: 100vh;
   min-block-size: 97vh;
 }
 
@@ -410,6 +411,7 @@
 
 .footer {
   display: grid;
+  block-size: 100vh;
 }
 
 .footer__text {
