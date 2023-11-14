@@ -107,7 +107,6 @@
 
 .decorated {
   position: relative;
-  min-block-size: 97vh;
 }
 
 .decorated::before,
@@ -134,7 +133,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin: 15px 0 0;
+  padding: 15px 0 0 0;
 }
 
 .header__theme-menu-list {
@@ -146,7 +145,7 @@
 @media (min-width: 768px) {
 
   .header__theme-menu {
-    margin: 15px 0 0;
+    padding: 15px 0 0 0;
   }
 }
 
@@ -155,7 +154,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: self-start;
-    margin: 15px;
+    padding: 0;
   }
 
   .header__theme-menu-list {
@@ -253,7 +252,7 @@
 @media (min-width: 768px) {
 
   .main {
-    gap: 80px;
+    /* gap: 80px; */
     padding: 60px 20px;
   }
 }
@@ -261,16 +260,16 @@
 @media (min-width: 1024px) {
 
   .main {
-    gap: 80px;
+    /* gap: 80px; */
     padding: 60px 20px;
   }
 }
 
 /* Block "Why?" */
 
-.why {
+/* .why {
   margin: 49px 0 0;
-}
+} */
 
 .why__list-item {
   list-style-type: none;
@@ -282,7 +281,7 @@
     display: grid;
     grid-template-columns: 236px 1fr;
     column-gap: var(--gap);
-    margin: 81px 0 0;
+    /* margin: 81px 0 0; */
   }
 }
 
@@ -296,7 +295,7 @@
 /* Block "What?" */
 
 .what {
-  margin: 50px 0 0;
+  margin: 30px 0 0;
 }
 
 .what__list-item {
@@ -330,7 +329,7 @@
 /* Block "How?" */
 
 .how {
-  margin: 50px 0 0;
+  margin: 30px 0 0;
 }
 
 .how__list-item {
@@ -343,7 +342,7 @@
     display: grid;
     grid-template-columns: 236px 1fr;
     column-gap: var(--gap);
-    margin: 80px 0 0;
+    margin: 60px 0 0;
   }
 }
 
@@ -366,7 +365,7 @@
 /* Pictures */
 
 .pictures {
-  margin: 50px 0 47px;
+  margin: 30px 0 0;
 }
 
 .pictures__heading {
@@ -391,7 +390,7 @@
 @media (min-width: 768px) {
 
   .pictures {
-    margin: 60px 0 74px;
+    margin: 60px 0 0;
   }
 
   .pictures__list {
