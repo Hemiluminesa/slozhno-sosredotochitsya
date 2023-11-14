@@ -145,7 +145,7 @@
 @media (min-width: 768px) {
 
   .header__theme-menu {
-    padding: 15px 0 0 0;
+    padding: 35px 0 0 0;
   }
 }
 
@@ -216,6 +216,7 @@
 
   .header__heading {
     text-shadow: 4px 4px 0 var(--accent-clr);
+    padding: 50px 0 0;
   }
 }
 
