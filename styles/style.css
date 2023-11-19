@@ -288,7 +288,6 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
     column-gap: var(--gap);
-    margin: 19px 0 0;
   }
 
   .pictures__list-item:first-child,
@@ -303,6 +302,10 @@
 
   .pictures__img {
     object-position: top;
+  }
+
+  .footer__text {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
 }
