@@ -70,7 +70,8 @@
 }
 
 .section {
-  margin: 30px 0 0;
+  display: grid;
+  gap: 20px;
 }
 
 .article {
@@ -167,11 +168,13 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid
+  /* outline: 1px solid */
+  border-block-end-color: currentColor;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--menu-clr);
+  /* outline: 1px solid var(--menu-clr); */
+  border-color: currentColor;
   cursor: default;
   pointer-events: none;
 }
@@ -194,14 +197,15 @@
 
 .main {
   display: grid;
-  padding: 0px 10px 40px 10px;
+  gap: 50px;
+  padding: 40px 10px;
 }
 
 /* Block "Why?" */
 
-.why {
+/* .why {
   margin: 40px 0 0;
-}
+} */
 
 /* Block "How?" */
 
@@ -215,11 +219,16 @@
 
 /* Pictures */
 
-.pictures__list {
-  display: flex;
-  flex-direction: column;
+.pictures {
   gap: 10px;
-  margin: 10px 0 0;
+}
+
+.pictures__list {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  gap: 10px;
+  /* margin: 10px 0 0; */
 }
 
 .pictures__img {
@@ -260,22 +269,32 @@
   }
 
   .main {
-    padding: 0px 20px 60px 20px;
+    gap: 80px;
+    padding: 60px 20px;
   }
 
   .section {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 236px 1fr;
     column-gap: var(--gap);
-    margin: 60px 0 0;
+    margin: 60px 0 0; */
+    grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
   }
 
-  .what {
+  /* .what {
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
 
   .what__heading {
     max-inline-size: 236px;
+  }
+
+  .what__list {
+    grid-column-start: span 2;
+  }
+
+  .how__list {
+    grid-column-start: 2;
   }
 
   .pictures {
@@ -313,6 +332,10 @@
 
 @media (min-width: 1024px) {
 
+  .section {
+    column-gap: 30px;
+  }
+
   .header__theme-menu {
     justify-self: center;
     align-self: self-start;
@@ -331,9 +354,9 @@
     max-inline-size: 491px;
   }
 
-  .why {
+  /* .why {
     grid-template-columns: 314px 1fr;
-  }
+  } */
 
   .what__heading {
     max-inline-size: 314px;
@@ -343,9 +366,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--gap);
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
-  .how {
+  /* .how {
     grid-template-columns: 314px 1fr;
-  }
+  } */
 }
