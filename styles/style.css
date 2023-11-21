@@ -40,7 +40,7 @@
 }
 
 .text-heading {
-  margin: 0 0 20px;
+  /* margin: 0 0 20px; */
   color: var(--heading-clr);
   font-weight: 700;
   font-size: 18px;
@@ -77,6 +77,11 @@
 .article {
   list-style-type: none;
 }
+
+/* .article-list {
+  display: grid;
+  gap: 20px;
+} */
 
 /* Header */
 
@@ -197,7 +202,7 @@
 
 .main {
   display: grid;
-  gap: 50px;
+  gap: 30px;
   padding: 40px 10px;
 }
 
@@ -269,7 +274,7 @@
   }
 
   .main {
-    gap: 80px;
+    gap: 60px;
     padding: 60px 20px;
   }
 
